@@ -1,3 +1,38 @@
 h1 {
     text-align: center;
 }
+
+.container {
+    background-color: rgb(0, 0, 0);
+}
+
+.marker {
+    height: 25px;
+    width: 200px;
+    /* margin: auto; */
+    margin: 10px auto;
+}
+
+.one {
+    background-color: rgb(255, 0, 0);
+}
+
+.two {
+    background-color: rgb(0, 255, 0);
+}
+
+.three {
+    background-color: rgb(0, 0, 255);
+}
+
+/* margin: auto; sets in order m-top, m-right, m-bottom, and m-left all at once - line 9  */
+
+/* when margin has two values, it sets the first to mtop and mbottom, and the second to mleft and mright */
+
+
+/* margin: 10px auto; this sets 10px top and bottom, and auto on left and right */
+
+
+/* rgb each number is between 0 and 255, 0 being 0 % of the color red for example(which is black), and 255 being 100%. */
+
+/* rgb is a function that takes three arguments for red green and blue and produces a color */
