@@ -1,6 +1,7 @@
 body {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1200px-Roasted_coffee_beans.jpg);
     font-family: sans-serif;
+    padding: 20px;
 }
 
 .menu {
@@ -39,11 +40,20 @@ h1, h2, p {
 }
 
 .item p {
-    display: inline-block
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.bottom-line {
+    margin-top: 25px;
 }
 
 h1 {
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -56,6 +66,41 @@ hr {
     border-color: brown;
 }
 
+
+/* FOOTER */
+
+footer {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: brown;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 /* setting both margins on lines 8 and 9 centers the div with the class of menu */
 
 /* p elements are block-level elements, so they take up the entire width of their parent element, ie the menu div in this case. to get them to behave like inline elements, one must apply styling. on lines 24-26, we use display: inline-block to select the article containing the p elements, and then select the p elements inside the article, and set them to fall into a single line similar to inline elements. */
@@ -63,3 +108,5 @@ hr {
 /* inline block elements only take up the width of their content.
 the p elements put on two separate lines creates a space, so exactly 50% for the flavor and price will bring the right one to the next line, so something like 49% will move it to the same line.
  */
+
+/* to center image, set to display:block; and then set margin left and right to auto; */
