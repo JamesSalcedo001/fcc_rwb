@@ -97,6 +97,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -25px;
 }
 
 
@@ -109,4 +110,4 @@ img {
 the p elements put on two separate lines creates a space, so exactly 50% for the flavor and price will bring the right one to the next line, so something like 49% will move it to the same line.
  */
 
-/* to center image, set to display:block; and then set margin left and right to auto; */
+/* to center image, set to display:block; and then set margin left and right to auto; *a
