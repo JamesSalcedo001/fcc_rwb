@@ -44,7 +44,18 @@
         </section>
         <section class="sect-3">
             <h2>Form Example</h2>
-            <form></form>
+            <form action="/url-path-to-send-info">
+                <fieldset>
+                    <label>
+                        <input type="radio" id="indoor" name="indoor-outdoor" value="indoor"/> Indoor
+                    </label>
+                    <label>
+                        <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"/> Outdoor
+                    </label>
+                </fieldset>
+                <input type="text" name="username" placeholder="username" required/>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </body>
 </html>
@@ -61,3 +72,15 @@
 <!-- figcaption used for captioning an image  -->
 
 <!-- em for emphasizing or bolding words -->
+
+<!-- name is value that represents data being submitted to form, enables location specified in the action attribute to access the form data being submitted -->
+
+<!-- button with type submit default behavior is to submit to form's location specified in action attribute -->
+
+<!-- input and button elements are inline elements, which don't appear on new lines, so if you place a button element under an input element, they will still show up on the same line. -->
+
+<!-- label elements are used to associate the text for input elements with the element itself especially for assistive tech like screen readers -->
+
+<!-- setting the same name to multiple radio inputs makes it so it only selects one input at once -->
+
+<!-- fieldset element is used to group related inputs and labels together in a web form. they are block level elements, so they appear on the next line.  -->
