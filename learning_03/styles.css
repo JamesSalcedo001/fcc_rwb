@@ -15,15 +15,15 @@ h1 {
 }
 
 .red {
-    background-color: rgb(255, 0, 0);
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
 }
 
 .green {
-    background-color: rgb(0, 255, 0);
+    background: linear-gradient(#55680D, #71F53E, #116C31);
 }
 
 .blue {
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
 
 /* margin: auto; sets in order m-top, m-right, m-bottom, and m-left all at once - line 9  */
@@ -75,3 +75,25 @@ and rose (red + magenta). */
 /* if they are placed side by side, they produce strong visual contrast and appear brighter */
 
 /* try not to overuse these color combinations, best to choose one dominant color as background and choose a complementary color to accent it */
+
+/* hex values start with a #, take 6 characters from 0 - 9, and A - F. First pair represents red, second represents green, and third represents blue.    */
+
+/* hexadecimal or base 16, goes from 0-9, and then A-F */
+
+
+/* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F */
+
+/* 00 is 0% of that color, FF is 100% of that color. 00FF00 translates to 0% red, 100% green, 0% blue. same as rgb(0, 255, 0) */
+
+
+/* HSL or Hue, Saturation, and Lightness is another representation of colors */
+
+
+/* accepts 3 values, 0 - 360 for Hue, 0 - 100 for Saturation as a percent, 0 - 100 for Lightness as a percentage */
+
+
+/* gradient one color transitions into another, linear gradient property lets you control direction of the transition along a line, and which colors are used */
+
+/* note: linear gradient creates an image element, and is paired with background property which can accept an image as a value */
+
+/* linear gradient arranges colors top to bottom or on a 180 deg line by default, and places colors evenly, however if one wants to alter this even distribution they can use color stops, adding a percentage after the color specifying where the color should start transitioning to the next */
