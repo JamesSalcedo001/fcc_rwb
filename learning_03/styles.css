@@ -26,6 +26,33 @@ h1 {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
 }
 
+/* .sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: white;
+    opacity: 0.5;
+} */
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black; */
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve {
+    display: inline-block;
+}
+
 /* margin: auto; sets in order m-top, m-right, m-bottom, and m-left all at once - line 9  */
 
 /* when margin has two values, it sets the first to mtop and mbottom, and the second to mleft and mright */
@@ -97,3 +124,21 @@ and rose (red + magenta). */
 /* note: linear gradient creates an image element, and is paired with background property which can accept an image as a value */
 
 /* linear gradient arranges colors top to bottom or on a 180 deg line by default, and places colors evenly, however if one wants to alter this even distribution they can use color stops, adding a percentage after the color specifying where the color should start transitioning to the next */
+
+/* opacity of 0 means element will be 0% visible, 1.0 will be 100% visible, 0.5 will be 50% visible or opaque */
+
+/* one can use the alpha channel with the color functions to modify opacity, for example rgba, hsla, etc */
+
+
+/* default display property for div is block, when two block elements are next to eachother, they stack vertically like blocks. */
+
+/* to position two divs on the same line, set their display properties to inline-block */
+
+/* box shadow property accepts 3 arguments, offsetX, offsetY, color. */
+
+/* offsets accept number values with units like px, positive X value moves shadow right, and negative moves it left,
+positive Y value moves shadow down, and negative moves it up */
+
+
+/* you can also use a spreadradius argument in the box shadow function */
+
