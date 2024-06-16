@@ -8,17 +8,62 @@
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
-    <p id="description">This is a form asking survey questions about cats.
+    <p id="description">This is a form asking general survey questions about cat people.
     </p>
     <form id="survey-form">
         <fieldset>
+            <legend>Cat Owner Info</legend>
             <label for="name" id="name-label">
                 Name: <input name="name" id="name" type="text" placeholder="Please enter your name" required />
             </label>
             <label for="email" id="email-label">
-                Email: <input name="email" id="email" type="email" placeholder="Please enter your email"/>
+                Email: <input name="email" id="email" type="email" placeholder="Please enter your email" required/>
+            </label>
+            <label for="number" id="number-label">
+                Number: <input name="number" id="number" placeholder="number" type="number" min="10" max="100"/>
+            </label>
+
+            <label for="dropdown">
+               <legend>Choose your favorite cat: </legend> 
+                <select id="dropdown">
+                    <option value="">Choose One</option>
+                    <option value="Tabby">Tabby</option>
+                    <option value="Tuxedo">Tuxedo</option>
+                    <option value="Black">Black</option>
+                    <option value="Korat">Korat</option>
+                </select>
             </label>
         </fieldset>
+        
+        <fieldset>
+            <legend>Choose One</legend>
+            <label for="radio-btn">
+                Indoor?
+                <input type="radio" name="radio-btn" class="radio-btn" value="indoor" checked />
+            </label>
+            <label for="radio-btn">
+                Outdoor?
+                <input type="radio" name="radio-btn" class="radio-btn" value="outdoor" />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What are your favorite things to do with your cat?</legend>
+            <label for="activities">
+                Activities (You can choose more than one): 
+                <input type="checkbox" value="playing" class="activities" checked/> Playing
+                <input type="checkbox" value="cat-video-games" class="activities" /> Cat Video Games
+                <input type="checkbox" value="outside" class="activities" /> Outside Time
+                <input type="checkbox" value="treats" class="activities" /> Treats 
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Open Ended Section: </legend>
+            <label>Comments: </label>
+            <textarea rows="5" cols="30" placeholder="Tell us about your favorite experience with a cat...."></textarea>
+        </fieldset>
+        <input type="submit" value="Submit!" id="submit"/>
     </form>
     
 </body>
