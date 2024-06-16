@@ -4,6 +4,8 @@ body {
     margin: 0;
     background-color: #1b1b32;
     color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px; 
 }
 
 label {
@@ -11,8 +13,46 @@ label {
     margin: 0 0.5rem 0;
 }
 
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+input, textarea, select {
+    width: 100%;
+    margin: 10px 0 0 0;
+} 
+
+.inline {
+    width: unset;
+}
+
+/* on line 44 remove width property of 100% set previously */
+
+
+
+
 /* margin: 0; sets the body's margin to 0 instead of the browser's default, which sometimes leaves room for a horizontal scrolbar  */
 
 /* rem stands for root em, and is relative to the font size of the html element */
 
 /* label elements are inline, multiple are displayed side by side on the same line, in order to display them on separate lines, set their display to block, and add a margin of 0.5rem 0 to separate them a bit */
+
+/* you can select the last of a type of element using the last-of-type psuedo-class */

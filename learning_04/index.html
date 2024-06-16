@@ -20,27 +20,30 @@
         <fieldset>
             <legend>Account type(required) </legend>
             <label for="personal-account">
-                <input id="personal-account" checked type="radio" name="account-type"/> Personal
+                <input id="personal-account" class="inline" checked type="radio" name="account-type"/> Personal
             </label>
             <label for="business-account">
-                <input id="business-account" type="radio" name="account-type"/> Business
+                <input id="business-account" class="inline" type="radio" name="account-type"/> Business
             </label>
         </fieldset>
         <fieldset>
-            <label>Upload a file: <input type="file" /></label>
-            <label>Input your age: <input type="number" min="13" max="120"/></label>
-            <label>How did you hear about us?
-                <select>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                    <option></option>
+            <label for="profile-picture">Upload a file: <input id="profile-picture" type="file" name="file"/></label>
+            <label for="age">Input your age: <input id="age" type="number" min="13" max="120" name="age"/></label>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">News</option>
+                    <option value="2">YouTube Channel</option>
+                    <option value="3">Forum</option>
+                    <option value="4">Other</option>
                 </select> 
+            </label>
+            <label for="bio"> Provide a bio: 
+                <textarea id="bio" name="bio" rows="3" columns="30" placeholder="I like walking on the beach..."></textarea>
             </label>
         </fieldset>
         <label for="terms-and-conditions">
-            <input id="terms-and-conditions" type="checkbox" required/> I accept the <a href="#terms-and-conditions">terms and conditions</a>
+            <input id="terms-and-conditions" name="terms-and-conditions" type="checkbox" required/> I accept the <a href="#terms-and-conditions">terms and conditions</a>
         </label>
         <input type="submit" value="Submit"/>
     </form>
@@ -66,3 +69,7 @@
 <!-- type=password you can use the pattern attribute to define a regex that the password must match to be valid -->
 
 <!-- pattern="[a-z0-5]{8,}" is a regex that matches 8 or more lowercase letters or the digits 0 to 5 -->
+
+<!-- textarea is able to recieve multiline text and and an intiial number of rows and columns that one can add with their respective attributes -->
+
+<!-- the name attribute is used to identify the element in the form submission -->
