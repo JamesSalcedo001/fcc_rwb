@@ -1,12 +1,13 @@
 body {
-    color: rgb(35, 31, 56);
-    background-color: rgb(227, 229, 240);
+    color: rgb(51, 47, 70);
+    /* background-color: rgb(227, 229, 240); */
+    background: linear-gradient(hsl(261, 82%, 75%) 30%, hsl(185, 20%, 75%) 80%, hsl(261, 82%, 75%) 100%);
     text-align: center;
     width: 100%;
     height: 100vh;
     margin: 0;
     font-family: Tahoma;
-    font-size: 20px;
+    font-size: 22px;
   }
 
 label {
@@ -34,7 +35,9 @@ form {
 fieldset {
     border: none;
     padding: 2rem 0;
-    border-bottom: 3px solid rgb(203, 202, 202); 
+    border-bottom: 3px solid rgb(238, 238, 243);
+    margin-bottom: 2em;
+    margin-top: 2em;
 
 }
 
@@ -49,12 +52,18 @@ fieldset:last-of-type {
     margin: 10px 0 0 0;
     min-height: 2em;
     border-radius: 5px;
+    background-color: white;
+    border: 1px solid white;
+    color: #0a0a23;
+    margin-bottom: 1rem;
+    opacity: 0.8;
  }
 
 input[type="radio"], input[type="checkbox"] {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
+    opacity: 0.8;
 }
 
 select {
@@ -63,14 +72,7 @@ select {
     margin: 10px 0 0 0;
     min-height: 1.5em;
     border-radius: 5px;
-}
-
-
-input, textarea {
-    background-color: rgb(203, 202, 202);
-    border: 1px solid rgb(203, 202, 202);
-    color: #0a0a23;
-    margin-bottom: 1rem;
+    opacity: 0.8;
 }
 
 
@@ -80,8 +82,13 @@ input[type="submit"] {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: rgb(203, 202, 202);
+    background-color: white;
     border-radius: 5px;
     border-color: #3b3b4f;
     min-width: 300px;
+    opacity: 1;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 20px 1px hsla(0, 0%, 100%, 0.929);
 }
