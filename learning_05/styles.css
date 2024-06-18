@@ -3,6 +3,7 @@
     width: 500px;
     height: 600px;
     overflow: hidden;
+    filter: blur(3px);
 }
 
 .frame {
@@ -12,11 +13,16 @@
     margin: 20px auto;
 }
 
+.one, .two {
+    filter: blur(1px);
+}
+
 .one {
     width: 425px;
     height: 150px;
     background-color: #efb762;
     margin: 20px auto;
+    box-shadow: 0 0 3px 3px #efb762;
 }
 
 .two {
@@ -29,4 +35,8 @@
 .three {
     width: 91%;
     height: 28%;
+    background-color: #b20403;
+    margin: 0 auto 20px;
+    filter: blur(2px);
 }
+
