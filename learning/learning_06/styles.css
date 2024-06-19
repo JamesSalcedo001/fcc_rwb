@@ -1,10 +1,11 @@
-.gallery {
-    width: 50%;
-    border: 5px solid red;
+* {
+    /* box-sizing: content-box;  */
+    box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-    padding: 5px;
-    border: 5px solid blue;
-}
+
+
+/* by default the content box model is used, which means when an element has a specific width, the width is calculated based only on the element's content. padding and border values get added to the total width, so the element grows to accomodate the value. */
+
+/* opposite is border box sizing model, which means the total width of the element including padding and border will be the explicit width set. the content of the element will shrink to make room for the padding and border */
+
