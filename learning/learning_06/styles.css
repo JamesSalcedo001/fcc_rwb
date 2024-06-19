@@ -14,6 +14,8 @@ body {
     width: 100%;
     max-width: 350px;
     height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .header {
@@ -34,6 +36,12 @@ body {
     padding: 20px 10px;
     max-width: 1400px;
     margin: 0 auto;  
+    gap: 16px;
+}
+
+.gallery::after {
+    content: "";
+    width: 350px;
 }
 
 /* by default the content box model is used, which means when an element has a specific width, the width is calculated based only on the element's content. padding and border values get added to the total width, so the element grows to accomodate the value. */
@@ -59,3 +67,12 @@ body {
 /* justfify-content determines how flex items are placed along the MAIN axis, affecting their position and space around them */
 
 /* align items positions flex items along the CROSS axis, with flex direction set to ROW for example, the cross axis is VERTICAL */
+
+
+/* object fit: cover tells the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit */
+
+/* use gap and subproperties row-gap/ column-gap to set the gaps/gutters between the rows and columns */
+
+/* apply gap to container element  */
+
+/* ::after psuedo-element creates an element that is the last child of selected element, which you can use to add an empty element after the last image, give it the same width as images, it will push the last image to the left when the gallery is in a two column layout */
