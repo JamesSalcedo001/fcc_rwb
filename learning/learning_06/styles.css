@@ -1,8 +1,17 @@
 * {
     /* box-sizing: content-box;  */
     box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
 }
 
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+}
 
 
 /* by default the content box model is used, which means when an element has a specific width, the width is calculated based only on the element's content. padding and border values get added to the total width, so the element grows to accomodate the value. */
