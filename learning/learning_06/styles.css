@@ -28,6 +28,8 @@ body {
 .gallery {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* by default the content box model is used, which means when an element has a specific width, the width is calculated based only on the element's content. padding and border values get added to the total width, so the element grows to accomodate the value. */
@@ -47,3 +49,7 @@ body {
 /* 3: column: vertical axis with flex-items from TOP to BOTTOM */
 
 /* 4: column-reverse: vertical axis with flex items from BOTTOM to TOP  */
+
+/* flex-wrap has two options: either wrap, which lets items move onto the next line when page shrinks, or nowrap which shrinks items when page shrinks without moving to next line  */
+
+/* justfify-content determines how flex items are placed along the MAIN axis, affecting their position and space around them */
