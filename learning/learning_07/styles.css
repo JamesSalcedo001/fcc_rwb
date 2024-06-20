@@ -97,6 +97,13 @@ p {
     border-bottom: 1px solid #888989;
 }
 
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+}
+
 /* rem stands for root em, and is relative to the font size of the html element  */
 
 /* 0.85rem in relation to the current html font size on line 12 of 16px calculates to roughly 13.6px */
