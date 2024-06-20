@@ -21,9 +21,15 @@
     </header>
     <main>
         <form action="url-to-submit-to">
-            <section></section>
-            <section></section>
-            <section></section>
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+              </section>
+              <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML</h2>
+              </section>
+              <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+              </section>
         </form>
     </main>
     
@@ -46,3 +52,10 @@
 
 <!-- main element contains core content  -->
 
+<!-- role attribute increases accessibility of page by indicating purpose behind an element on the page to assistive technologies -->
+
+<!-- role attribute is part of the Web Accessibility Initiative or WAI, and accepts preset values -->
+
+<!-- every region role requires a label which helps screen reader users understand the purpose of the region  -->
+
+<!-- one method for adding label is add heading element inside region, then reference it with the aria-labelledby attribute  -->
