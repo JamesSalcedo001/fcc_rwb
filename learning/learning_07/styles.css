@@ -85,6 +85,14 @@ p {
 }
 
 
+.indent {
+    margin-left: 1em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
 /* rem stands for root em, and is relative to the font size of the html element  */
 
 /* 0.85rem in relation to the current html font size on line 12 of 16px calculates to roughly 13.6px */
