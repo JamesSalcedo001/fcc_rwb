@@ -32,9 +32,17 @@ header {
     display: flex;
 }
 
+h1, h2 {
+    font-family: Verdana, sans-serif;
+}
+
 h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
 }
 
 nav {
@@ -52,3 +60,6 @@ nav > ul {
 /* the child combinator selector > is used between selectors to target elements that match the second selector and are direct children of the first selector, use when you have deeply nested elements and want to control scope of styling */
 
 /* use the section semantic element to separate elements in form  */
+
+
+/* to navigate around the page, give anchor tags hrefs matching id of elements you want to navigate to */
