@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Free Code Camp Notes</title>
+    </head>
+    <body>
+        <main>
+            <h1>Important Unique Info Here in main element</h1>
+
+            <section class="sect-1">
+                <p>Here is my <a href="https://github.com/JamesSalcedo001" target="_blank">github</a> profile</p>
+            
+                <a href="https://social-app-jpxa.onrender.com/">
+                <img src="https://user-images.githubusercontent.com/107723341/243157331-7e9590d6-814b-4165-99e7-c8bd01f15b1a.png" alt="one of my projects" height="400px" width="400px"/>
+                </a>
+            </section>
+    
+            <section class="sect-2">
+                <h2>Lists</h2>
+                <h3>Things in list: </h3>
+                <ul>
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ul>
+                <figure>
+                    <img src="https://user-images.githubusercontent.com/107723341/243157331-7e9590d6-814b-4165-99e7-c8bd01f15b1a.png" alt="one of my projects" height="400px" width="400px"/>
+                    <figcaption><em>Space Base</em> - The Social App</figcaption>
+                </figure>
+                <h3>Example of Ordered List: </h3>
+                <ol>
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                </ol>
+                <figure>
+                    <img src="https://user-images.githubusercontent.com/107723341/266446077-e3c59c90-15ce-4196-8e83-e96fd19a4b1a.png" width="400px" height="400px" alt="another one of my projects"/>
+                    <figcaption><strong>Cool</strong> Cat Store</figcaption>
+                </figure>
+            </section>
+            <section class="sect-3">
+                <h2>Form Example</h2>
+                <form action="/url-path-to-send-info">
+                    <fieldset>
+                        <legend>Indoor or Outdoor Cat?</legend>
+                        <label>
+                            <input type="radio" id="indoor" name="indoor-outdoor" value="indoor"/> Indoor
+                        </label>
+                        <label>
+                            <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"/> Outdoor
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Cat Personality?</legend>
+                        <input type="checkbox" id="sweet" name="personality" value="sweet" checked/> <label for="sweet">Sweet</label>
+                        <input type="checkbox" id="lazy" name="personality" value="lazy"/> <label for="lazy">Lazy</label>
+                        <input type="checkbox" id="energetic" name="personality" value="energetic"/> <label for="energetic">Energetic</label>
+    
+                    </fieldset>
+                    <input type="text" name="username" placeholder="username" required/>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>No copyright - using as example site, feel free to use template</footer>
+       
+    </body>
+</html>
+
+
+<!-- 1: HTML5  has elements that identify diff content areas, use them because they make html easier to read, and help with Search Engine Optimization SEO, and accessibility-->
+
+<!-- - main element used to represent main content of body of html doc, content inside should be unique to document. use inside the body. -->
+
+<!-- when you add lower rank heading element to it's implied that is the start of a new subsection -->
+
+<!-- figure represents self contained content and will allow you to associate an img with a caption -->
+
+<!-- figcaption used for captioning an image  -->
+
+<!-- em for emphasizing or bolding words -->
+
+<!-- name is value that represents data being submitted to form, enables location specified in the action attribute to access the form data being submitted -->
+
+<!-- button with type submit default behavior is to submit to form's location specified in action attribute -->
+
+<!-- input and button elements are inline elements, which don't appear on new lines, so if you place a button element under an input element, they will still show up on the same line. -->
+
+<!-- label elements are used to associate the text for input elements with the element itself especially for assistive tech like screen readers -->
+
+<!-- setting the same name to multiple radio inputs makes it so it only selects one input at once -->
+
+<!-- fieldset element is used to group related inputs and labels together in a web form. they are block level elements, so they appear on the next line.  -->
+
+<!-- legend acts as caption for content INSIDE fieldset elements, gives users context on what to enter -->
+
+<!-- another way to associate an input elem's text with the element itself is nesting input text inside label and adding for attribute in label with the same value as the input's id attribute -->
+
+<!-- adding a uniform name attribute to form checkbox inputs also helps a server process your web form easier  -->
+
+<!-- like radio buttons, form data for selected checkboxes are name / value attribute pairs, value is optional but it is best to include -->
+
+<!-- footer contains info about author, copyright data, terms of use, contact info, etc. -->
+
+<!-- the doctype html tag is a special string used known as a declaration and ensures browser tries to meet industry-wide specifications, tells browser that the doc is an HTML5 doc which is the latest version -->
+
+<!-- set browser behavior with meta elements, common uses are meta with charset=utf-8 which tells browser how to encode characters for page -->
