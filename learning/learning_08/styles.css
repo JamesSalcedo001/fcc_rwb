@@ -1,0 +1,15 @@
+/* SVG stands for Scalable Vector Graphic, and a useful property is the path attribute, which allows the img to be scaled without affecting the resolution of the image  */
+
+
+/* max function returns the largest of a set of comma-separated values */
+
+/* img {
+    width: max(250px, 25vw);
+} */
+
+/* in above example, width will be 250px if viewport width is less than 1000px. if vw is greater than 1000px, if the vw is greater than 1000px, the width of img will be 25vw, because 25vw is equal to 25% of the viewport width. */
+
+
+#logo {
+    width: max(100px, 18vw);
+}
