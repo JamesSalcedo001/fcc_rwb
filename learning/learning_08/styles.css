@@ -42,3 +42,13 @@ nav {
     max-width: 300px;
     height: 50px;
 }
+
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* the child combinator selector > is used between selectors to target elements that match the second selector and are direct children of the first selector, use when you have deeply nested elements and want to control scope of styling */
+
+/* use the section semantic element to separate elements in form  */
