@@ -22,6 +22,21 @@ body {
   h1 {
     margin-bottom: 10rem;
   }
+
+  ul {
+    margin: auto;
+    width: 40%;
+    text-wrap: wrap;
+    text-align: start;
+  }
+
+  ul > li {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    margin: 2rem auto;
+  }
   
   #image {
     display: block;
